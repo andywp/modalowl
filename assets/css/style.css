@@ -1,0 +1,78 @@
+body {
+  padding: 30px;
+}
+
+@media (min-width: 768px) {
+  .modal-dialog {
+    width: 980px;
+  }
+}
+.customNavigation a {
+  position: absolute;
+  top: 35;
+  left: 0;
+  right: auto;
+  padding: 30px;
+  float: left;
+  font-size: 3em;
+  cursor: pointer;
+  z-index: 1;
+}
+.customNavigation a.next {
+  left: auto;
+  right: 0;
+}
+@media (min-width: 320px) {
+  .customNavigation a {
+    top: 20%;
+  }
+}
+@media (min-width: 480px) {
+  .customNavigation a {
+    top: 25%;
+  }
+}
+@media (min-width: 768px) {
+  .customNavigation a {
+    top: 30%;
+  }
+}
+@media (min-width: 992px) {
+  .customNavigation a {
+    top: 35%;
+  }
+}
+
+#sync1 .item {
+  background: #0c83e7;
+  margin: 5px;
+  color: #FFF;
+  border-radius: 3px;
+  text-align: center;
+}
+
+#sync2 .owl-item .item {
+  background: #333;
+  margin: 5px;
+  color: #FFF;
+  border-radius: 3px;
+  text-align: center;
+  cursor: pointer;
+}
+#sync2 .owl-item .item img {
+  opacity: 0.5;
+}
+#sync2 .owl-item.synced .item img {
+  opacity: 1;
+}
+
+.modal.in .modal-dialog {
+  border-radius: 0px;
+}
+.modal.in .modal-dialog .modal-content {
+  border-radius: 0px;
+}
+.modal.in .modal-dialog .modal-content .modal-header {
+  border-radius: 0px;
+  text-align: center;
+}
